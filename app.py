@@ -1,7 +1,7 @@
 import streamlit as st
-from sqlalchemy import create_engine,
+from sqlalchemy import create_engine, text
 
-st.title("tfo")
-st.write("Your Streamlit app is working!")
+DATABASE_URL = "mysql+pymysql://root:Papa7777@@localhost/projetbd"   # adapte les valeurs
 
+engine = create_engine(DATABASE_URL)
 
